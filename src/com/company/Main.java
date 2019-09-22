@@ -10,16 +10,10 @@ public class Main {
         int n = in.nextInt();
         int sum = 0;
         if (n >= 1) {
-            for (int i = 1; i <= n; i++) {
-                sum += i;
-            }
+            System.out.println("Сумма от 1 до N: " + n * (1 + n) / 2);
+        } else {
+            System.out.println("Сумма от 1 до N: " + (1 + n) * (2 - n) / 2);
         }
-        else {
-            for (int i=1; i>=n; i--){
-                sum+=i;
-            }
-        }
-        System.out.println("Сумма от 1 до N: " + sum);
         // write your code here
     }
 }
